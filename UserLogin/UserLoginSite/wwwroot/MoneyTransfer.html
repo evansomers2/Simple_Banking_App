@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>View Account</title>
+    <meta charset="utf-8" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,1VB0Rw0KGgo=">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body style="background-color:lightblue; font-family:Cambria, Georgia, 'Times New Roman'">
+    <!-- The nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background:lightblue; border-bottom:2px solid black">
+        <a class="navbar-brand" href="/home.html">Account</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item">
+                    <a class="nav-link" href="/Login.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/BankAccount.html">My Account</a>
+                </li>
+
+
+            </ul>
+            <a href="updateAccount.html" style="border:1px solid black; color:black" class="float-right m-0" id="fullname"></a>
+            <a href="BankAccount.html#theModal" style="border:1px solid black; color:black" id="logoutBtn" class="ml-2">Logout</a>
+        </div>
+    </nav>
+    <div id="bankTitle" style="font-size:300%" class="text-left mt-3 mb-2">Bank Account Info</div>
+    <a href="BankAccount.html#theModal" style="border:1px solid black; color:black" id="balancebtn" class="ml-2">View Balance</a>
+    <div class="modal fade text-center" data-backdrop="static" id="theModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header d-block">
+                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h1 class="modal-title text-center" id="sampleModalLabel">Account Balance</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="mx-2 my-2">
+                        <div class="card">
+                            <div id="loginmsg" class="card-header text-center">
+                                Checkings Account
+                            </div>
+                            <div class="card-body p-0 ml-1">
+                                <div class="row" style="width:70%; margin-left:30%">
+                                    <div class="col-4">Account Id: </div>
+                                    <input id="accountid" class="text-left col-8">
+                                </div>
+                                <div class="row" style="width:70%; margin-left:30%">
+                                    <div class="col-4">Amount: </div>
+                                    <input type="text" id="amount" class="text-left col-8">
+                                </div>
+                                <div class="card-footer text-center">
+
+                                    <div class="row">
+                                        <input type="button" style="width:20%; margin-left:2%" value="Send" id="sendbtn" />
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/MoneyTransfer.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,1VB0Rw0KGgo=">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body style="background-color:lightblue; font-family:Cambria, Georgia, 'Times New Roman'">
+    <!-- The nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background:lightblue; border-bottom:2px solid black">
+        <a class="navbar-brand" href="/home.html">Account</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item">
+                    <a class="nav-link" href="/Login.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/BankAccount.html">My Account</a>
+                </li>
+                
+
+
+            </ul>
+            <a href="updateAccount.html" style="border:1px solid black; color:black" class="float-right m-0" id="fullname"></a>
+            <a href="Login.html#theModal" style="border:1px solid black; color:black" id="logoutBtn" class="ml-2">Logout</a>
+        </div>
+    </nav>
+    <div id="status" style="font-size:300%" class="text-left mt-3 mb-2"></div>
+
+    <div class="row">
+        <div class="col-4">Username: </div>
+        <div id="usrname" class="col-8">/></div>
+    </div>
+    <div class="row">
+        <div class="col-4">First Name: </div>
+        <div id="firstname" class="col-8">/></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Last Name: </div>
+        <div id="lastname" class="col-8">/></div>
+    </div>
+    <div class="row">
+        <div class="col-4">DOB: </div>
+        <div id="dob" class="col-8">/></div>
+    </div>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

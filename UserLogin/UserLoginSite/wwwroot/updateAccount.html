@@ -1,0 +1,66 @@
+﻿<!--
+    File:       employee.html
+    Purpose:    The html frame of the employee CRUD website
+    Author:     Evan Somers(0876535)
+    Date:       November 1st, 2019
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Account</title>
+    <meta charset="utf-8" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,1VB0Rw0KGgo=">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body style="background-color:lightblue; font-family:Cambria, Georgia, 'Times New Roman'">
+    <!-- The nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background:lightblue; border-bottom:2px solid black">
+        <a class="navbar-brand" href="/home.html">Login Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item">
+                    <a class="nav-link" href="/Login.html">Home</a>
+                </li>
+
+            </ul>
+            <a href="Login.html#theModal" style="border:1px solid black; color:black" class="text-right float-right" id="loginBtn" data-toggle="modal" data-target="theModal">Login</a>
+            <a href="Login.html#theModal" style="border:1px solid black; color:black" id="logoutBtn" class="ml-2">Logout</a>
+        </div>
+    </nav>
+    <h1 style="font-size:300%">Update Account</h1>
+    <div id="status" class="text-left mt-3 mb-2"></div>
+    <div class="row">
+        <div class="col-4">First name: </div>
+        <div class="col-8"><input type="text" placeholder="enter first name" id="TextBoxFirstname" class="form-control" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Last name: </div>
+        <div class="col-8"><input type="text" placeholder="enter last name" id="TextBoxLastname" class="form-control" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Username: </div>
+        <div class="col-8"><input type="text" placeholder="enter username" id="TextBoxUsername" class="form-control" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Password: </div>
+        <div class="col-8"><input type="password" placeholder="enter password" id="TextBoxPassword" class="form-control" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Email: </div>
+        <div class="col-8"><input type="text" placeholder="enter email" id="TextBoxEmail" class="form-control" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Date of Birth: </div>
+        <div class="col-8"><input type="text" placeholder="enter date of birth" id="TextBoxDob" class="form-control" /></div>
+    </div>
+    <input type="button" value="Update Account" id="updateBtn" />
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/updateAccount.js"></script>
+</body>
+</html>
